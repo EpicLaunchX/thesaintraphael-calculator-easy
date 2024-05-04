@@ -1,4 +1,4 @@
-from ..domain.models import Operands
+from pytemplate.domain.models import Operands
 
 
 class Calculator:
