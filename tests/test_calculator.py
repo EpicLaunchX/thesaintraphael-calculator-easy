@@ -1,5 +1,5 @@
-from src.pytemplate.domain.models import operands_factory
-from src.pytemplate.service.calculator import Calculator
+from pytemplate.domain.models import operands_factory
+from pytemplate.service.calculator import Calculator
 
 
 def test_add():
