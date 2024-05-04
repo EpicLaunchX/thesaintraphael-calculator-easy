@@ -1,6 +1,6 @@
 import pytest
 
-from src.pytemplate.domain.models import operand_factory, Operands
+from src.pytemplate.domain.models import Operands, operands_factory
 
 
 def test_operands_types():
@@ -16,15 +16,15 @@ def test_operand_values():
 
 
 def test_return_type():
-    operands = operand_factory(1, 2)
+    operands = operands_factory(1, 2)
     assert isinstance(operands, Operands)
 
 
 def test_floating_point_numbers():
     with pytest.raises(TypeError):
-        operand_factory(1.1, 2.2)
+        operands_factory(1.1, 2.2)
 
 
 def test_str_input():
     with pytest.raises(TypeError):
-        operand_factory("one", "two")
+        operands_factory("one", "two")

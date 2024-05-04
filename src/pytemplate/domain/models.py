@@ -11,5 +11,5 @@ class Operands:
             raise TypeError("Both operands must be integers")
 
 
-def operand_factory(first_operand: int, second_operand: int) -> Operands:
+def operands_factory(first_operand: int, second_operand: int) -> Operands:
     return Operands(first_operand=first_operand, second_operand=second_operand)
