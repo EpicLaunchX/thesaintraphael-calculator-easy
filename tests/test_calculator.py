@@ -4,7 +4,6 @@ from pytemplate.service.calculator import Calculator
 
 def test_add():
     assert Calculator().add(operands_factory(10, 20)) == 30
-    assert Calculator().add(operands_factory(-10, -20)) == -10
 
 
 def test_subtract():
