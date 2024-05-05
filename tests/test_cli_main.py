@@ -46,3 +46,12 @@ def test_division(mock_inputs, capsys):
     main()
     captured = capsys.readouterr()
     assert captured.out == expected
+
+
+def test_invalid_action(mock_inputs, capsys):
+    inputs = ["8", "4", "invide_action_name"]
+    expected = "Invalid action name"
+    mock_inputs(inputs)
+    main()
+    captured = capsys.readouterr()
+    assert captured.out == expected

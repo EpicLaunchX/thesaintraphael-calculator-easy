@@ -17,8 +17,4 @@ def main():
         print(result, end="")
 
     else:
-        print("Invalid action name")
-
-
-if __name__ == "__main__":
-    main()
+        print("Invalid action name", end="")
