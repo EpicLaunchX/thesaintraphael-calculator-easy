@@ -14,7 +14,7 @@ def main():
     if action in available_actions:
         operands = operands_factory(first_operand, second_operand)
         result = calculator.__getattribute__(action)(operands)
-        print(result)
+        print(result, end="")
 
     else:
         print("Invalid action name")
