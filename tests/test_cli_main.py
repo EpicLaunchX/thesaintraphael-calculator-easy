@@ -1,4 +1,5 @@
 from unittest import mock
+
 from pytemplate.entrypoints.cli.main import main
 
 
